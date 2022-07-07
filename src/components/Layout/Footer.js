@@ -4,20 +4,24 @@ import MiniContact from '../card/MiniContact';
 export default function Footer() {
   const linkedInUrl = "https://www.linkedin.com/in/pei-yun-hite-29a3b49a/"
   const githibUrl = "https://github.com/ollyhite"
-  const [mystate, setMystate] = useState(false);
+  const [openContact, setOpen] = useState(false);
   const onBtnClick =(event)=>{
-    const temState = !mystate;
-    setMystate(temState)
+    const temState = !openContact;
+    setOpen(temState)
+  }
+  const closeCard = (event)=>{
+    setOpen(false)
   }
   return(
     <footer>
         <div className='social-link'>
-            <a href={linkedInUrl} target='_blank'>LinkedIn</a>
-            <a href={githibUrl} target='_blank'>GitHub</a>
+            <a href={linkedInUrl} target='_blank' rel="noreferrer">LinkedIn</a>
+            <a href={githibUrl} target='_blank' rel="noreferrer">GitHub</a>
         </div>
-        <a className='mini-contact-frame' onClick={onBtnClick}>
-          {mystate&&<MiniContact />}
-          Get in Touch</a>
+        <div className='mini-contact-frame'>
+            <a onClick={onBtnClick}>Get in Touch</a>
+            {openContact&&<MiniContact closeCard={closeCard}/>}
+        </div>
     </footer>
   );
 }

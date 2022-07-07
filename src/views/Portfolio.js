@@ -13,22 +13,22 @@ export default function Portfolio() {
             <div className='project-frame'>
             <h1>My Projects work</h1>
                 <div className="img">
-                    <img src={watzPro}/>
+                    <img src={watzPro} alt="watz-project images"/>
                     <p class="shadow"></p>
                     <span><FaGithub /></span>
                 </div>
                 <div className="img">
-                    <img src={faithPro}/>
+                    <img src={faithPro} alt="FaithPlaceOutdoor-project images"/>
                     <p class="shadow"></p>
                     <span><FaGithub /></span>
                 </div>
                 <div className="img">
-                    <img src={rhythmPro}/>
+                    <img src={rhythmPro} alt="RhythmAndBooze-project images"/>
                     <p class="shadow"></p>
                     <span><FaGithub /></span>
                 </div>
                 <div className="img">
-                    <img src={rosePro}/>
+                    <img src={rosePro} alt="Rose-project images"/>
                     <p class="shadow"></p>
                     <span><FaGithub /></span>
                 </div>

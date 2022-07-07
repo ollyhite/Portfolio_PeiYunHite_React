@@ -15,25 +15,8 @@
         // border: 1px solid pink;
         position: relative;
     }
-    form{
-        // border: 1px solid pink;
+    .right{
         width: 40%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        input{
-            border:none;
-            border-bottom: 2px solid var(--text-gray);
-            background-color: transparent;
-        }
-        .submit-btn{
-            border:none;
-            background-color: var(--text-pink);
-            padding: 20px;
-        }
-        .error{
-            color: red;
-        }
     }
 }

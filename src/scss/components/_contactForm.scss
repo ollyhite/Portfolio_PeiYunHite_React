@@ -1,0 +1,29 @@
+form {
+    // border: 1px solid pink;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    input,
+    textarea {
+        border: none;
+        border-bottom: 2px solid var(--text-gray);
+        background-color: transparent;
+    }
+
+    textarea {
+        // height: 10%;
+    }
+
+    .submit-btn {
+        border: none;
+        background-color: var(--text-pink);
+        padding: 20px;
+    }
+
+    .error {
+        color: red;
+    }
+}

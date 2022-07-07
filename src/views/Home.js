@@ -7,11 +7,11 @@ export default function Home() {
     return (
         <View>
             <div className='home-frame'>
-                <img className='main-img' src={homeImg}/>
+                <img className='main-img' src={homeImg} alt="main-images"/>
                 <div className='right'>
                     <h1>Pei-Yun Hite</h1>
                     <p></p>
-                    <a>View my projects</a>
+                    <a href='/portfolio'>{`View my projects >>`}</a>
                 </div>
             </div>
         </View>
