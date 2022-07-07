@@ -1,0 +1,18 @@
+footer {
+    width: 95%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 10px;
+    .social-link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mini-contact-frame{
+        position: relative;
+    }
+}

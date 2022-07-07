@@ -1,0 +1,19 @@
+nav{
+    width: 95%;
+    height: 15%;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    .menu{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .home{
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+    }
+}
