@@ -1,11 +1,8 @@
 import React from 'react'
 import View from '../components/Layout/View'
-// import { useForm } from "react-hook-form";
 import ContactForm from '../components/form/ContactForm'
-export default function Contact() {
-    // const { register, formState: { errors }, handleSubmit } = useForm();
 
-    // const onSubmit = (data) => console.log(data);
+export default function Contact() {
     return (
         <View>
             <div className='title'>
@@ -25,21 +22,8 @@ export default function Contact() {
                 <div className='right'>
                     <ContactForm />
                 </div>
-                {/* <form onSubmit={handleSubmit(onSubmit)}>
-                    <p>Name</p>
-                    <input {...register("name", { required: true })} />
-                    {errors.name && <p className='error'>Name is required</p>}
-                    <p>Email</p>
-                    <input {...register("mail", { required: "Email Address is required" })} />
-                    {errors.mail && <p className='error'>Name is required</p>}
-
-                    <p>Message</p>
-                    <textarea {...register("message", { required: "Message is required" })} />
-                    {errors.message && <p className='error'>Name is required</p>}
-                    <input className='submit-btn' type="submit" />
-                </form> */}
-            {/* <p>2022 By Pei-Yun Hite</p> */}
             </div>
+            <p>2022 By Pei-Yun Hite</p>
         </View>
     )
 }

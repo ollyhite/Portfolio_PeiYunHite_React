@@ -6,7 +6,6 @@ import About from './views/About';
 import Contact from './views/Contact';
 import Portfolio from './views/Portfolio';
 import Resume from './views/Resume';
-import { send } from 'emailjs-com';
 
 function App() {
   return (
