@@ -5,10 +5,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    .title {
-            align-self: flex-start;
-            font-size: 2rem;
-        }
+    .title-frame{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .title {
+                align-self: flex-start;
+                font-size: 2rem;
+            }
+    }
     .education,.work,.skill{
         width: 85%;
         display: flex;
