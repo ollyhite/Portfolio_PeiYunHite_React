@@ -2,7 +2,7 @@
     display: flex;
     align-items: flex-end;
     .right{
-        width: 15vw;
+        width: 20vw;
         height: 30vh;
         font-size: 2rem;
         // border: 1px solid yellow;
@@ -14,7 +14,7 @@
         h1{
             position: absolute;
             left: -2rem;
-            top: -2rem;
+            top: 0rem;
         }
         a{
             font-size: 1.2rem;
@@ -25,4 +25,107 @@
 
 .main-img{
     width: 25vw;
+}
+
+$layout-breakpoint-1350: 1350px;$layout-breakpoint-1020: 1020px;
+$layout-breakpoint-850: 850px;
+$layout-breakpoint-700: 700px;
+$layout-breakpoint-600: 600px;$layout-breakpoint-520: 520px;
+$layout-breakpoint-400: 400px;$layout-breakpoint-300: 300px;
+
+@media all and (max-width: $layout-breakpoint-1350) {
+    .main-img {
+            width: 30vw;
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-1020) {
+    .home-frame {
+        .right {
+            width: 25vw;
+        }
+    }
+    .main-img {
+        width: 35vw;
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-850) {
+    .home-frame {
+        .right {
+            width: 30vw;
+            h1{
+                margin-top: 6rem;
+            }
+        }
+    }
+
+    .main-img {
+        width: 40vw;
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-700) {
+    .home-frame {
+        .right {
+            width: 35vw;
+        }
+    }
+
+    .main-img {
+        width: 45vw;
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-600) {
+    .home-frame {
+        .right {
+            width: 40vw;
+        }
+    }
+
+    .main-img {
+        width: 50vw;
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-520) {
+    .home-frame {
+        .right {
+            width: 45vw;
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: $layout-breakpoint-400) {
+    .home-frame {
+        flex-direction: column;
+        align-items: center;
+        .right {
+            width: 100vw;
+            justify-content: center;
+            h1{
+                position:unset;
+                font-size: 3rem;
+            }
+        }
+    }
+    .main-img {
+        width: 90vw;
+    }
+}
+
+
+
+@media all and (max-width: $layout-breakpoint-300) {
+    .home-frame {
+        .right {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
 }

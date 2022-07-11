@@ -43,7 +43,7 @@ This is mt portfolio build with React.js .As an employer looking for candidates 
 
 ## Usage
 
-![screenshot](./client/src/images/text_editor_screenshot.png)
+![screenshot](./src/components/images/portfolio_screenshot.png)
 
 ## Built With
 

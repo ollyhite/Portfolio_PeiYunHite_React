@@ -18,5 +18,45 @@
     .right{
         width: 40%;
         height: 100%;
+        form{
+            height: 80%;
+        }
     }
+}
+
+$layout-breakpoint-1000:1000px;$layout-breakpoint-600: 600px;
+
+@media all and (max-width: $layout-breakpoint-1000) {
+    .title{
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+    .contact-frame {
+        .right {
+            width: 50%;
+        }
+    }
+
+}
+
+@media all and (max-width: $layout-breakpoint-600) {
+    .title {
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+    .contact-frame {
+        height: 100%;
+        flex-direction: column;
+        .left{
+            width: 85%;
+        }
+        .right {
+            width: 85%;
+            form{
+                height: 100%;
+            }
+        }
+    }
+
 }

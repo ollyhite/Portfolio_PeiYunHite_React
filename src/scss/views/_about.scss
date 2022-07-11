@@ -3,10 +3,15 @@
     height: 80%;
     display: flex;
     justify-content: space-between;
+    // @media all and (min-width: 700px) {
+    //         width: 40vw;
+    //     }
     .left{
         width: 60%;
         height: 100%;
         display: flex;
+        @media all and (min-width: 1250px) {
+        }
         h1{
             width: 20%;
             font-size: 5rem;
@@ -14,6 +19,18 @@
         }
         img{
             width: 20vw;
+            // @media all and (min-width: 1250px) {
+            //         width: 25vw;
+            // }
+            // @media all and (min-width: 1000px) {
+            //         width: 30vw;
+            // }
+            // @media all and (min-width: 700px) {
+            //         width: 40vw;
+            // }
+            // @media all and (min-width: 550px) {
+            //         width: 45vw;
+            // }
         }
     }
     .right{
@@ -22,5 +39,82 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+$layout-breakpoint-1250:1250px;$layout-breakpoint-1000: 1000px;
+$layout-breakpoint-700: 700px;$layout-breakpoint-550: 550px;
+$layout-breakpoint-450: 450px;
+
+@media all and (max-width: $layout-breakpoint-1250) {
+    .about-frame{
+        .left {
+                img {
+                    width: 25vw;
+                }
+            }
+    }
+    
+}
+
+@media all and (max-width: $layout-breakpoint-1000) {
+    .about-frame {
+        width: 100%;
+        .left {
+            img {
+                width: 30vw;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: $layout-breakpoint-700) {
+    .about-frame {
+        width: 90%;
+        .left {
+            img {
+                width: 40vw;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: $layout-breakpoint-550) {
+    .about-frame {
+        width: 90%;
+        .left {
+            flex-direction: column;
+            img {
+                width: 45vw;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        .right {
+            width: 50%;
+        }
+    }
+}
+@media all and (max-width: $layout-breakpoint-450) {
+    .about-frame {
+        width: 90%;
+        flex-direction: column;
+        .left {
+            width: 100%;
+            flex-direction: column;
+            img {
+                width: 70vw;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        .right {
+            width: 100%;
+        }
     }
 }

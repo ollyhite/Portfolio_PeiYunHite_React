@@ -39,7 +39,6 @@
                     width: 30%;
                 }
                 .right{
-                    // border: 1px solid green;
                     width: 100%;
                     padding: 0 40px;
                 }
@@ -62,4 +61,45 @@
                 }
     }
     
+}
+
+@media all and (max-width:600px) {
+    .resume-frame{
+        .title{
+            margin-top: 4rem;
+        }
+        .education,
+            .work,
+            .skill {
+                width: 85%;
+                flex-direction: column;
+
+                h2 {
+                    align-self: flex-start;
+                }
+
+                .info-frame {
+                    width: 90%;
+                    .section {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                    
+                            .left {
+                                width: 30%;
+                            }
+                    
+                            .right {
+                                width: 100%;
+                                padding: 0 40px;
+                            }
+                        }
+                }
+            }
+        .skill{
+            .left{
+                display: none;
+            }
+        }
+    }
 }

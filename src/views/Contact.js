@@ -32,10 +32,11 @@ export default function Contact() {
                     <p>(123) 234-7777</p>
                 </div>
                 <div className='right'>
+                    <h1>Your Information</h1>
                     <ContactForm openMsgMadolFunc={openMsgMadolFunc} checkIsErrorFunc={checkIsErrorFunc}/>
                 </div>
             </div>
-            <p>2022 By Pei-Yun Hite</p>
+            {/* <p>2022 By Pei-Yun Hite</p> */}
         </View>
         <MsgModal open={open} isError={isError} openMsgMadolFunc={openMsgMadolFunc}/>
         </>

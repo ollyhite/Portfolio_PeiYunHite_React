@@ -74,3 +74,76 @@
     }
     
 }
+
+$layout-breakpoint-1200:1200px;$layout-breakpoint-600: 600px;
+$layout-breakpoint-500: 500px;
+
+@media all and (max-width: $layout-breakpoint-1200) {
+    .project-frame{
+        .img{
+            .project-info{
+                .title-frame{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: $layout-breakpoint-600) {
+    .project-frame {
+        .img {
+            .project-info {
+                .title-frame {
+                    font-size: 1.5rem;
+                    svg{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: $layout-breakpoint-500) {
+    .project-frame {
+        .img {
+            .project-info {
+                .title-frame {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    .project-frame {
+        .img {
+            .project-info {
+                width: 80%;
+                .title-frame {
+                    font-size: .8rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+}
